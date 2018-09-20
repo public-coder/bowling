@@ -61,8 +61,8 @@ public class Bowling
             else if (a == SPARE) 
             {
                 
-                int lastRoll = 10 - rolls.get(rollsIndex -1);
-                rolls.set(rollsIndex, lastRoll);
+                int thisRoll = 10 - rolls.get(rollsIndex -1);
+                rolls.set(rollsIndex, thisRoll);
                 
                 if (games.size() < 10)
                 {
