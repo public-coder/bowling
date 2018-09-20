@@ -8,8 +8,8 @@ public class Bowling
 
     public static void main(String[] args) 
     {
-        String text =args[0];
-//        String text = "X7/9-X-88/-6XXX81";
+//        String text =args[0];
+        String text = "X7/9-X-88/-6XXX81";
 //        String text = "XXXXXXXXXXXX";
 //        String text = "9-9-9-9-9-9-9-9-9-9-";
 //        String text = "5/5/5/5/5/5/5/5/5/5/5";
@@ -159,12 +159,22 @@ public class Bowling
             System.out.println("====\n");        
 
         }
-
+        System.out.println("Total Score = " + totalScore(games));
     }
     public static boolean isDigit(char adigit) 
     {
         int a = (int)adigit;
         return a>= 48 && a <= 57;
+    }
+    
+    public static int totalScore(List<Turn> turns)
+    {
+        int total = 0;
+        for (Turn turn : turns) {
+           total += turn.getScore();
+        }
+        return total;
+    
     }
     
     
