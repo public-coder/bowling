@@ -8,8 +8,8 @@ public class Bowling
 
     public static void main(String[] args) 
     {
-//        String text =args[0];
-        String text = "X7/9-X-88/-6XXX81";
+        String text =args[0];
+//        String text = "X7/9-X-88/-6XXX81";
 //        String text = "XXXXXXXXXXXX";
 //        String text = "9-9-9-9-9-9-9-9-9-9-";
 //        String text = "5/5/5/5/5/5/5/5/5/5/5";
